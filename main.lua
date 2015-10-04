@@ -59,9 +59,6 @@ end
 
 
 port.initialize_ports()
-for k,v in pairs(SDL.flags) do
-	print(k,v)
-end
 
 ---
 -- Initialize SDL. Create the main window and initialize the display
