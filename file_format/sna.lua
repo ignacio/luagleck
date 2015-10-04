@@ -30,12 +30,10 @@ local function parse (pattern, data)
 		table.insert(locs, loc)
 	end
 	local parent_locals = get_locals(2) -- Get the locals of the caller
-	print(table.concat(options))
 	local matches = { string.unpack(table.concat(options), data) }
 	matches[#matches] = nil	-- Remove unneeded last value from unpack (first unread byte)
 	for i, match in ipairs(matches) do
 		local l_name = locs[i]
-		print(l_name)
 		debug.setlocal(2, parent_locals[l_name], match)
 	end
 end
