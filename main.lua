@@ -66,10 +66,10 @@ port.initialize_ports()
 SDL.init({ SDL.flags.Video, SDL.flags.Events })
 
 -- screen without borders
---local win, err = SDL.createWindow({ title = "Lua Spec", height = 192, width = 256 })
+--local win, err = SDL.createWindow({ title = "LuaGleck", height = 192, width = 256 })
 
 -- screen with borders
-local win, err = SDL.createWindow({ title = "Lua Spec", height = 192 + 64 + 56, width = 256 + 48 + 48,
+local win, err = SDL.createWindow({ title = "LuaGleck", height = 192 + 64 + 56, width = 256 + 48 + 48,
 									--flags = { SDL.window.Resizable }
 									--flags	= { SDL.flags.OpenGL, SDL.window.Resizable }
 								  })
